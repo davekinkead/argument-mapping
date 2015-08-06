@@ -9,7 +9,7 @@ loadToolTip = function(e) {
       // now add a new one
       var toolTip = $('<div id="tooltip" class="tooltip"><span id="premise" title="This is a premise">P</span> <span id="This is a conclusion" title="Conclusion">C</span> <span id="delete" title="Delete">D</span></div>').appendTo('body');
       var domBox = window.getSelection().getRangeAt(0).getBoundingClientRect();
-      toolTip.css({'position': 'absolute', left: domBox.x + domBox.width/2 - 25, top: domBox.y-55});
+      toolTip.css({left: domBox.left + domBox.width/2 - 45, top: domBox.top-55 });
 
       //  add the generate-map button
       var generateMapBtn = $('<div id="map-btn" class="tooltip"><a href="#">Generate Argument Map</a></div>').appendTo('body');

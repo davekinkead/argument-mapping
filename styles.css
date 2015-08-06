@@ -17,6 +17,7 @@ h2 {
 }
 
 .tooltip {
+  position: absolute;
   background: #444;
   color: #FFF;
   padding: 0.5rem 1rem;
@@ -24,6 +25,8 @@ h2 {
   display: block;
 }
 .tooltip a {
+  left: 0;
+  top: 0;
   color: #FFF;
   text-decoration: none;
 }
