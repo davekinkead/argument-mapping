@@ -7,7 +7,7 @@ loadToolTip = function(e) {
 
     if (selectedText) {
       // now add a new one
-      var toolTip = $('<div id="tooltip" class="tooltip"><span id="premise" title="Premise">P</span> <span id="conclusion" title="Conclusion">C</span> <span id="delete" title="Delete">D</span></div>').appendTo('body');
+      var toolTip = $('<div id="tooltip" class="tooltip"><span id="premise" title="This is a premise">P</span> <span id="This is a conclusion" title="Conclusion">C</span> <span id="delete" title="Delete">D</span></div>').appendTo('body');
       var domBox = window.getSelection().getRangeAt(0).getBoundingClientRect();
       toolTip.css({'position': 'absolute', left: domBox.x + domBox.width/2 - 25, top: domBox.y-55});
 
